@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 
-# Author: Xuzhou Yin 
+# Author: Xuzhou Yin
+# Adapted and Edited by William(Peijian) Ding
+
+# Changes have been made to the original file to account for the following changes:
+# 1. that Weibo has changed its html script since the package has been created.
+# 2. some lines in the orignal script do not run anymore 
 from bs4 import BeautifulSoup
 import struct
 import re
@@ -50,7 +55,7 @@ def scrap_each_query(keyword, start, end, page, query):
 	driver.get(url)
 	systime.sleep(5)
 	for i in range(int(page)):
-		url = base_url + keyword + "&typeall=1&suball=1&timescope=custom:" + start + ":" + end + "&page=" + str(i + 1)	
+		url = base_url + keyword + "&typeall=1&suball=1&timescope=custom:" + start + ":" + end + "&page=" + str(i + 1)
 		driver.get(url)
 		page_source = driver.page_source
 		soup = BeautifulSoup(page_source, "lxml")
@@ -64,7 +69,7 @@ def scrap_each_query(keyword, start, end, page, query):
 # 			each = each.encode('utf-8')
 			t = ""
 			if "月" in each:
-				t = each[(each.index("月")-1):(each.index("月"))]+ each[(each.index("月") + 1):(each.index("月") + 3)] 
+				t = each[(each.index("月")-1):(each.index("月"))]+ each[(each.index("月") + 1):(each.index("月") + 3)]
 # =============================================================================
 # 			else:
 # 				time = each[0:each.index()]
