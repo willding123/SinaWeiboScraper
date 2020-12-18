@@ -1,3 +1,7 @@
+# About this package - 2020/12/18
+This package was originally developed by [Xuzhou Yin](https://github.com/Yhinner) in 2017. After three years, some of the codes are no longer running due to the change in Weibo's html script and python packages. So, I adapted this code and made it sufficient for my own research purpose. Because in my research we did not need the specific post time and time interval sufficed, I did not revise the code to reflect specific post time. The output information we can get using this python script is keyword, time interval, and post content. You are very welcome to update on this code or the original package to make improvement. 
+The following is the description of the original package. The procedure to use this version of the package is the same as the original version. 
+
 # SinaWeiboScraper
 This is a Web Scraper for Sina Weibo Search by Keywords
 
