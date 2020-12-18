@@ -4,7 +4,7 @@
 # Adapted and Edited by William(Peijian) Ding
 
 # Changes have been made to the original file to account for the following changes:
-# 1. that Weibo has changed its html script since the package has been created.
+# 1. The package has not been updated for three years and Weibo has changed its html script structure. 
 # 2. some lines in the orignal script do not run anymore 
 from bs4 import BeautifulSoup
 import struct
